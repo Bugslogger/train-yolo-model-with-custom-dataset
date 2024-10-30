@@ -1,0 +1,5 @@
+train: yolo_test_dataset/images/train
+val: yolo_test_dataset/images/val
+
+nc: 5 # Number of classes
+names: ["hard hat", "hat", "helmet", "person", "gloves"] # List of class names

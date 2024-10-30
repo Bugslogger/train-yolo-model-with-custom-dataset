@@ -1,0 +1,40 @@
+# Project structure
+
+├── yolo_train_model
+│   ├── test_dataset
+│   │   ├── annotation
+│   │   │   └── [].xml
+│   │   ├── images
+│   │   │   └── [].jpg
+│   │   └── labels
+│   │   │   └── [].txt
+│   ├── yolo_test_data
+│   │   ├── images
+│   │   │   ├── train
+│   │   │   └── val
+│   │   └── labels
+│   │       ├── train
+│   │       └── val
+│   ├── dataset.yaml
+│   ├── main.py
+│   ├── train.py
+│   └── convert_xml_to_yolo.py
+│   └── yolo11s.pt
+
+1. folder `test_dataset`  contains the dataset for which will be used to convert. It has three subfolders: `annotation`, `images`,
+    `labels`. The `annotation` folder contains the xml files for the dataset, the `images` 
+    folder contains the images, and the `labels` folder contains the .txt for the dataset.
+
+2.  folder `yolo_test_data` contains the dataset for traning the model. It has two subfolders
+    `images` and `labels`. The `images` folder contains two subfolders,  `train` and `val`, which contains images.
+    The `labels` folder also contains two subfolders, `train` and `val`, which contains .txt  files for images. 
+    (This .txt file contains co-ordinates this co-ordinates will generated after converting  xml to yolo format)
+
+3.   `dataset.yaml` is the configuration file for the dataset. It contains the path to the dataset
+4.   `convert_xml_to_yolo`  is the python script to convert xml to yolo format. It will generate .txt files with co-ordinates.
+5.   `train.py` is the python script to train the model. It will use the dataset in `yolo_test_data` to train the model.
+
+Note: This code does not contains script for runing the model. After training the model it will create .pt and .onnx file.
+       This file will be used for predicting the object.
+
+
