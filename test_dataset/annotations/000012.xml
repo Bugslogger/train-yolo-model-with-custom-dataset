@@ -1,7 +1,7 @@
 <annotation>
 	<folder>hat01</folder>
 	<filename>000012.jpg</filename>
-	<path>D:\ai-modal\yolo\object-detection\test_dataset\images\000012.jpg</path>
+	<path>D:\dataset\hat01\000012.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
