@@ -1,2 +1,6 @@
 test_dataset/
+yolo_test_dataset/
+yolo_test_data/
+labelled/
 trained_file/
+datasets/

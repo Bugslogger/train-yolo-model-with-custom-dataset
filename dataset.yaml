@@ -1,5 +1,34 @@
-train: yolo_test_dataset/images/train
-val: yolo_test_dataset/images/val
+path: yolo_test_dataset/images
+train: train
+val: val
 
-nc: 5 # Number of classes
-names: ["hard hat", "hat", "helmet", "person", "gloves"] # List of class names
+nc: 26
+names:
+  [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "Glass",
+    "Gloves",
+    "Goggles",
+    "Helmet",
+    "No-Helmet",
+    "No-Vest",
+    "Person",
+    "Reflective-Vest",
+    "Safety-Boot",
+    "Safety-Vest",
+    "Vest",
+    "Yelek",
+    "helmet",
+    "no helmet",
+    "no vest",
+    "no_helmet",
+    "no_vest",
+    "protective_suit",
+    "safety vest - v1 2023-11-19 5-12pm",
+    "vest",
+    "worker",
+  ]

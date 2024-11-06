@@ -7,9 +7,10 @@ model = YOLO("yolo11s.pt")
 # train the model
 train_results = model.train(
     data='dataset.yaml', # path to dataset YAML
-    epochs=80, # number of training epochs
+    epochs=100, # number of training epochs
     imgsz=640, # training image size
     device="cpu", # device used for training model
+    batch=16
     # space={"lr0": tune.uniform(1e-5, 1e-1)},
 )
 
